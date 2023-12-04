@@ -7,6 +7,10 @@
     @apply w-full overflow-x-hidden
   }
 
+  a {
+    @apply cursor-pointer
+  }
+
   input,
   textarea {
     @apply bg-gray-600 outline-none rounded-lg p-5;
@@ -26,6 +30,10 @@
     @apply text-white border-white border-4 rounded-full duration-700 ease-in-out hover:bg-purple-500 p-3 inline-block
   }
   .btn-primary {
-    @apply bg-gradient-to-r from-button2 to-button px-4 py-4 sm:px-5 md:px-7 md:py-5 rounded-xl text-white
+    @apply bg-gradient-to-bl from-button2 to-button px-4 py-4 sm:px-5 md:px-7 md:py-5 rounded-xl text-white
+  }
+
+  .gradian_section {
+    @apply bg-gradient-to-t via-bg from-button2 to-bg
   }
 }

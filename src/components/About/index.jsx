@@ -14,8 +14,8 @@ export const About = () => {
   };
 
   return (
-    <section className="bg-gradient-to-tr via-bg from-button2 to-bg" id="about">
-      <div className="flex flex-col lg:flex-row w-[80%] mx-auto gap-0 lg:gap-16">
+    <section className="gradian_section" id="about">
+      <div className="flex flex-col py-28 lg:flex-row w-[80%] mx-auto gap-0 lg:gap-16">
         <div className="mb-16 mt-10 lg:m-0">
           <img className="border" src={imgAbout} alt="" />
         </div>

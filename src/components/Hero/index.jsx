@@ -3,7 +3,7 @@ import { imgHero, waveHero } from "../../assets/img";
 
 export const Hero = () => {
   return (
-    <section className="bg-card_light">
+    <section className="bg-card_light" id="home">
       <div className="w-[80%] mx-auto pt-12 md:pt-20">
         <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-between">
           <div>

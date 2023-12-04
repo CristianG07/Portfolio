@@ -13,6 +13,7 @@ import Project6 from "../assets/projects/p6.png";
 import Project7 from "../assets/projects/p7.png";
 
 export const menuLinks = [
+  { name: "Home", link: "home" },
   { name: "About", link: "about" },
   { name: "Projects", link: "projects" },
   { name: "Contact", link: "contact" },
@@ -73,7 +74,7 @@ export const projectsData = [
     stack: ["Html", "Css", "Js"],
     github_link: "https://github.com/CristianG07/anon-ecommerce-website",
     live_link: "https://anon-ecommerce-website.vercel.app/",
-    category: "",
+    category: "Ecommerces",
   },
   {
     id: "5",
@@ -82,7 +83,7 @@ export const projectsData = [
     stack: ["Html", "Css", "Js"],
     github_link: "https://github.com/CristianG07/cineflix-master/tree/master",
     live_link: "https://cineflix-master.vercel.app/",
-    category: "",
+    category: "Movie Websites",
   },
   {
     id: "1",
@@ -109,7 +110,7 @@ export const projectsData = [
     stack: ["Html", "Css", "Js"],
     github_link: "https://github.com/CristianG07/filmlane-master",
     live_link: "filmlane-master.vercel.app",
-    category: "",
+    category: "Movie Websites",
   },
   {
     id: "3",

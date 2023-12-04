@@ -1,6 +1,7 @@
 import { useRef } from "react";
 // import emailjs from "@emailjs/browser";
 import { contact_info } from "../../data";
+import { waveFooter } from "../../assets/img";
 
 export const Contact = () => {
   const form = useRef();
@@ -27,8 +28,8 @@ export const Contact = () => {
   // };
 
   return (
-    <section id="contact" className="py-20 px-3 text-white bg-bgLight">
-      <div className="text-center mt-8">
+    <section id="contact" className="gradian_section text-white">
+      <div className="text-center py-28">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-primary">Me</span>
         </h3>
@@ -93,6 +94,9 @@ export const Contact = () => {
             </button>
           </form>
         </div>
+      </div>
+      <div>
+        <img src={waveFooter} alt="" />
       </div>
     </section>
   );

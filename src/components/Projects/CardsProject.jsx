@@ -20,6 +20,7 @@ export const CardsPeject = ({ projecs }) => {
                 href={project.github_link}
                 target="_blank"
                 className="btn_projects"
+                title="Code"
               >
                 <FaCode size={35} />
               </a>
@@ -27,6 +28,7 @@ export const CardsPeject = ({ projecs }) => {
                 href={project.live_link}
                 target="_blank"
                 className="btn_projects"
+                title="Demo"
               >
                 <MdOutlineRemoveRedEye size={35} />
               </a>
