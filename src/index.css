@@ -6,4 +6,26 @@
   body {
     @apply w-full overflow-x-hidden
   }
+
+  input,
+  textarea {
+    @apply bg-gray-600 outline-none rounded-lg p-5;
+  }
+
+  ::placeholder {
+    @apply text-lg;
+  }
+
+  ::selection {
+    @apply bg-cyan-600;
+  }
+}
+
+@layer components {
+  .btn_projects {
+    @apply text-white border-white border-4 rounded-full duration-700 ease-in-out hover:bg-purple-500 p-3 inline-block
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-button2 to-button px-4 py-4 sm:px-5 md:px-7 md:py-5 rounded-xl text-white
+  }
 }

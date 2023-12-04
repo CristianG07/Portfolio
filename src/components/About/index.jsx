@@ -1,5 +1,5 @@
 import { useState, useTransition } from "react";
-import { imgAbout } from "../../assets/img";
+import { imgAbout, waveProjects } from "../../assets/img";
 import TabButton from "./TabButton";
 import { aboutLinks } from "../../data";
 
@@ -14,14 +14,14 @@ export const About = () => {
   };
 
   return (
-    <section className="bg-gradient-to-tr via-bg from-button2 to-bg pb-24" id="about">
+    <section className="bg-gradient-to-tr via-bg from-button2 to-bg" id="about">
       <div className="flex flex-col lg:flex-row w-[80%] mx-auto gap-0 lg:gap-16">
-        <div className="mb-5 mt-10 lg:m-0">
+        <div className="mb-16 mt-10 lg:m-0">
           <img className="border" src={imgAbout} alt="" />
         </div>
         <div className="max-w-lg">
           <h4 className="text-2xl md:text-5xl text-white font-bold mb-4">
-            About Me
+            About <span className="text-primary">Me</span>
           </h4>
           <p className="text-base md:text-lg text-text_secondary">
             I am a full stack web developer with a passion for creating
@@ -51,6 +51,9 @@ export const About = () => {
             {aboutLinks.find((link) => link.id === tab).content}
           </div>
         </div>
+      </div>
+      <div className="pt-12 md:pt-20">
+        <img src={waveProjects} alt="" />
       </div>
     </section>
   );

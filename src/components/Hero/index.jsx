@@ -27,7 +27,7 @@ export const Hero = () => {
             </p>
             <div className="mt-8 text-sm sm:text-lg font-medium flex items-center gap-5">
               <a
-                className="bg-gradient-to-r from-button2 to-button px-4 py-4 sm:px-5 md:px-7 md:py-5 rounded-xl text-white"
+                className="btn-primary"
                 href="../../assets/cv/CV-CRISTIAN-FRONT_END.pdf"
                 download
               >

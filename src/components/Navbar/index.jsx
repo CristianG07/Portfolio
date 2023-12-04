@@ -16,7 +16,7 @@ export const Navbar = () => {
       <nav className="flex justify-between items-center w-[85%]">
         <div className="flex">
           <a href="/" className="flex items-center justify-center">
-            <DiCssdeck size="3rem" /> <span className="md:text-2xl text-xl font-semibold">CGonzalez07</span>
+            <DiCssdeck size="3rem" color="#854CE6" /> <h6 className="text-3xl font-semibold">Cristian <span className="text-primary">G.</span></h6>
           </a>
         </div>
         <ul className="md:flex hidden items-center gap-6 font-semibold">
