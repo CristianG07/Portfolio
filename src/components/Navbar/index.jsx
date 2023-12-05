@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // icons
 import { DiCssdeck } from "react-icons/di";
@@ -10,15 +10,7 @@ import { Link } from "react-scroll";
 
 
 export const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
   const [IsOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const nav = document.querySelector("nav");
-      window.scrollY > 0 ? setSticky(true) : setSticky(false);
-    });
-  }, []);
 
   return (
     <header className="flex justify-center sticky top-0 left-0 z-10 h-20 bg-[#151515] text-white">

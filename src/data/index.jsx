@@ -12,6 +12,18 @@ import Project5 from "../assets/projects/p5.png";
 import Project6 from "../assets/projects/p6.png";
 import Project7 from "../assets/projects/p7.png";
 
+// skills images
+import SkillImg1 from "../assets/skills/html5.png";
+import SkillImg2 from "../assets/skills/css3.png";
+import SkillImg3 from "../assets/skills/js.png";
+import SkillImg4 from "../assets/skills/reactjs.png";
+import SkillImg5 from "../assets/skills/tailwind.png";
+import SkillImg6 from "../assets/skills/nodejs.png";
+import SkillImg7 from "../assets/skills/express.png";
+import SkillImg8 from "../assets/skills/mongodb.png";
+import SkillImg9 from "../assets/skills/git.png";
+// import SkillImg8 from "./assets/skills/figma.png";
+
 export const menuLinks = [
   { name: "Home", link: "home" },
   { name: "About", link: "about" },
@@ -19,18 +31,62 @@ export const menuLinks = [
   { name: "Contact", link: "contact" },
 ];
 
+// skill
+const skills = [
+  {
+    src: SkillImg1,
+    title: "HTML",
+  },
+  {
+    src: SkillImg2,
+    title: "CSS",
+  },
+  {
+    src: SkillImg3,
+    title: "JavaScript",
+  },
+  {
+    src: SkillImg4,
+    title: "ReactJS",
+  },
+  {
+    src: SkillImg5,
+    title: "Tailwind",
+  },
+  {
+    src: SkillImg6,
+    title: "NodeJS",
+  },
+  {
+    src: SkillImg7,
+    title: "ExpressJS",
+  },
+  {
+    src: SkillImg8,
+    title: "MongoDB",
+  },
+  {
+    src: SkillImg9,
+    title: "Git",
+  },
+];
+
 export const aboutLinks = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Tailwind</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
+      <ul className="grid grid-cols-2 sm:grid-cols-3">
+        {skills.map((skill) => (
+          <li key={skill.title} className="flex items-center gap-1">
+            <img
+              src={skill.src}
+              alt={skill.title}
+              className="w-10"
+            />
+            <span>{skill.title}</span>
+          </li>
+        ))}
       </ul>
     ),
   },

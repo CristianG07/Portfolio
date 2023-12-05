@@ -77,20 +77,23 @@ export const Contact = () => {
                 className="md:w-1/2 w-full"
                 placeholder="Name"
                 name="user_name"
+                required
               />
               <input
                 type="email"
                 className="md:w-1/2 w-full"
                 placeholder="Email"
                 name="user_email"
+                required
               />
             </div>
-            <input type="text" placeholder="Project" name="project" />
+            <input type="text" placeholder="Project" name="project" required />
             <textarea
               placeholder="Your Message"
               rows={10}
               className="resize-none"
               name="message"
+              required
             />
             <button type="submit" className="btn_primary font-semibold w-fit">
               Send Message
