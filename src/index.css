@@ -13,7 +13,7 @@
 
   input,
   textarea {
-    @apply bg-gray-600 outline-none rounded-lg p-5;
+    @apply bg-bg outline-none rounded-lg p-5;
   }
 
   ::placeholder {
@@ -21,7 +21,7 @@
   }
 
   ::selection {
-    @apply bg-cyan-600;
+    @apply bg-primary;
   }
 }
 
@@ -34,6 +34,6 @@
   }
 
   .gradian_section {
-    @apply bg-gradient-to-t via-bg from-button2 to-bg
+    @apply bg-[#151515]
   }
 }

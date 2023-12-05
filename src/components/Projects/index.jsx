@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { CardsPeject } from "./CardsProject";
 import { projectsData, projectsNav } from "../../data";
-import { waveContact } from "../../assets/img";
 
 export const Projects = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -55,9 +54,6 @@ export const Projects = () => {
         <section className="grid justify-center">
           <CardsPeject projecs={projecs} />
         </section>
-      </div>
-      <div>
-        <img src={waveContact} alt="" />
       </div>
     </section>
   );

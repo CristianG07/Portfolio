@@ -3,7 +3,7 @@ import { menuLinks, social_media } from "../../data";
 
 export const Footer = () => {
   return (
-    <footer className="bg-bg w-full text-sm py-16 text-center text-white flex flex-col gap-10">
+    <footer className="bg-hero-bg w-full text-sm py-24 text-center text-white flex flex-col gap-10">
       <div className="flex lg:gap-16 gap-8 items-center flex-wrap justify-center">
         <div>
           <h4 className="text-4xl font-bold">

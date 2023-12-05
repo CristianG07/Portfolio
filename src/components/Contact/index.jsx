@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { contact_info } from "../../data";
-import { waveFooter } from "../../assets/img";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
@@ -38,7 +37,7 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="gradian_section text-white">
-      <div className="text-center py-28">
+      <div className="text-center py-36">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-primary">Me</span>
         </h3>
@@ -96,12 +95,9 @@ export const Contact = () => {
             <button type="submit" className="btn_primary font-semibold w-fit">
               Send Message
             </button>
-            <ToastContainer s/>
+            <ToastContainer />
           </form>
         </div>
-      </div>
-      <div>
-        <img src={waveFooter} alt="" />
       </div>
     </section>
   );

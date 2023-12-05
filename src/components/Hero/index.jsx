@@ -4,8 +4,8 @@ import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
-    <section className="bg-card_light" id="home">
-      <div className="w-[80%] mx-auto pt-12 md:pt-20">
+    <section className="bg-hero-bg" id="home">
+      <div className="w-[80%] mx-auto py-24">
         <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-between">
           <div>
             <h1 className="text-2xl md:text-5xl text-white font-bold mb-4">
@@ -42,8 +42,8 @@ export const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-primary rounded-full md:max-w-sm w-[70%]">
-            <img className="w-full" src={imgHero} alt="" />
+          <div className=" md:max-w-md w-[85%]">
+            <img className="w-full animate-bounce-slow" src={imgHero} alt="" />
           </div>
         </div>
       </div>

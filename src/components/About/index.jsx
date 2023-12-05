@@ -1,5 +1,5 @@
 import { useState, useTransition } from "react";
-import { imgAbout, waveProjects } from "../../assets/img";
+import { imgAbout } from "../../assets/img";
 import TabButton from "./TabButton";
 import { aboutLinks } from "../../data";
 
@@ -51,9 +51,6 @@ export const About = () => {
             {aboutLinks.find((link) => link.id === tab).content}
           </div>
         </div>
-      </div>
-      <div className="pt-12 md:pt-20">
-        <img src={waveProjects} alt="" />
       </div>
     </section>
   );
