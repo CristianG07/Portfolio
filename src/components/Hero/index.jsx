@@ -1,6 +1,7 @@
 import TypewriterComponent from "typewriter-effect";
 import { imgHero, waveHero } from "../../assets/img";
 import { Link } from "react-scroll";
+import cv from '../../assets/cv/CV_CRISTIAN_FRONT_END.pdf'
 
 export const Hero = () => {
   return (
@@ -29,7 +30,7 @@ export const Hero = () => {
             <div className="mt-8 text-sm sm:text-lg font-medium flex items-center gap-5">
               <a
                 className="btn_primary"
-                href="../../assets/cv/CV_CRISTIAN_FRONT_END.pdf"
+                href={cv}
                 download
               >
                 Download CV
