@@ -1,31 +1,40 @@
 import { useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { contact_info } from "../../data";
 import { waveFooter } from "../../assets/img";
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //   emailjs
-  //     .sendForm(
-  //       "service_5gurw56",
-  //       "template_xtqqtti",
-  //       form.current,
-  //       "JQW4TF_J-z_PIT8pE",
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       },
-  //     );
-  //   e.target.reset();
-  // };
+    emailjs
+      .sendForm(
+        "service_5gurw56",
+        "template_xtqqtti",
+        form.current,
+        "JQW4TF_J-z_PIT8pE"
+      )
+      .then(
+        (result) => {
+          toast.success(`Message sent successfully ${result.text}`, {
+            position: "bottom-left",
+            theme: "dark",
+          });
+        },
+        (err) => {
+          console.log(err.text)
+          toast.error(`Error message not sent`, {
+            position: "bottom-left",
+            theme: "light",
+          })
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <section id="contact" className="gradian_section text-white">
@@ -38,9 +47,7 @@ export const Contact = () => {
           className="mt-16 flex flex-col sm:flex-row justify-center
          sm:gap-3 gap-6 lg:gap-10 md:p-6 p-2 w-full rounded-lg lg:max-w-5xl lg:mx-auto"
         >
-          <div
-            className="flex flex-col gap-7 "
-          >
+          <div className="flex flex-col gap-7 ">
             {contact_info.map((contact, i) => (
               <div
                 key={i}
@@ -62,7 +69,7 @@ export const Contact = () => {
 
           <form
             ref={form}
-            // onSubmit={sendEmail}
+            onSubmit={sendEmail}
             className="flex flex-col w-full flex-1 mx-auto sm:w-2/5 md:w-3/5 gap-4"
           >
             <div className="flex justify-between flex-col md:flex-row gap-3">
@@ -86,12 +93,10 @@ export const Contact = () => {
               className="resize-none"
               name="message"
             />
-            <button
-              type="submit"
-              className="btn-primary font-semibold w-fit"
-            >
+            <button type="submit" className="btn_primary font-semibold w-fit">
               Send Message
             </button>
+            <ToastContainer s/>
           </form>
         </div>
       </div>

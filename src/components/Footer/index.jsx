@@ -29,9 +29,9 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="text-3xl flex gap-5">
-          {social_media.map((icon) => (
+          {social_media.map((icon, i) => (
             <div
-              key={icon.logo}
+              key={i}
               className="text-gray-600 hover:text-primary transition-colors duration-700 ease-in-out"
             >
               <a href={icon.href} target="_blank">

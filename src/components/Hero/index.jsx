@@ -1,5 +1,6 @@
 import TypewriterComponent from "typewriter-effect";
 import { imgHero, waveHero } from "../../assets/img";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
@@ -27,18 +28,18 @@ export const Hero = () => {
             </p>
             <div className="mt-8 text-sm sm:text-lg font-medium flex items-center gap-5">
               <a
-                className="btn-primary"
+                className="btn_primary"
                 href="../../assets/cv/CV-CRISTIAN-FRONT_END.pdf"
                 download
               >
                 Download CV
               </a>
-              <a
-                className="border-2 border-primary rounded-xl text-primary px-4 py-4 sm:px-5 md:px-7 md:py-5"
-                href="#contact"
+              <Link
+                className="border-2 border-primary rounded-xl text-primary px-4 py-4 sm:px-5 md:px-7 md:py-5 hover:scale-105 duration-500"
+                to="contact"
               >
                 Contact Me
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-primary rounded-full md:max-w-sm w-[70%]">
