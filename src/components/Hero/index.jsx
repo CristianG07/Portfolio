@@ -29,7 +29,7 @@ export const Hero = () => {
             <div className="mt-8 text-sm sm:text-lg font-medium flex items-center gap-5">
               <a
                 className="btn_primary"
-                href="../../assets/cv/CV-CRISTIAN-FRONT_END.pdf"
+                href="../../assets/cv/CV_CRISTIAN_FRONT_END.pdf"
                 download
               >
                 Download CV
