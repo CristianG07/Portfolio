@@ -24,7 +24,7 @@ export const About = () => {
             About <span className="text-primary">Me</span>
           </h4>
           <p className="text-base md:text-lg text-text_secondary">
-            I am a full stack web developer with a passion for creating
+            I am a front-end web developer with a passion for creating
             interactive and responsive web applications. I have experience
             working with JavaScript, React, Redux, Node.js, Express, MongoDB,
             Tailwind Css, HTML, CSS, and Git. I am a quick learner and I am always
