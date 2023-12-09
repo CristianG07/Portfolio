@@ -1,7 +1,7 @@
 import TypewriterComponent from "typewriter-effect";
 import { imgHero, waveHero } from "../../assets/img";
 import { Link } from "react-scroll";
-import cv from '../../assets/cv/CV_CRISTIAN_FRONT_END.pdf'
+import cv from '../../assets/cv/Cv_Cristian_FrontEnd.pdf'
 
 export const Hero = () => {
   return (
