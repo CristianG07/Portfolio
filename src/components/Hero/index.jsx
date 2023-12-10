@@ -1,12 +1,13 @@
 import TypewriterComponent from "typewriter-effect";
 import { imgHero, waveHero } from "../../assets/img";
 import { Link } from "react-scroll";
-import cv from '../../assets/cv/Cv_Cristian_FrontEnd.pdf'
+import cv from "../../assets/cv/Cv_Cristian_FrontEnd.pdf";
+import { social_media } from "../../data";
 
 export const Hero = () => {
   return (
     <section className="bg-hero-bg" id="home">
-      <div className="w-[80%] mx-auto py-24">
+      <div className="w-[80%] mx-auto pt-24">
         <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-between">
           <div>
             <h1 className="text-2xl md:text-5xl text-white font-bold mb-4">
@@ -22,17 +23,27 @@ export const Hero = () => {
                 />
               </span>
             </h1>
-            <p className="text-base md:text-lg text-text_secondary max-w-xl">
-              I am a web developer (Front-End) very dedicated and committed to
-              what I do, Feel free to take a look at my latest projects on the
-              projects page.
-            </p>
-            <div className="mt-8 text-sm sm:text-lg font-medium flex items-center gap-5">
-              <a
-                className="btn_primary"
-                href={cv}
-                download
-              >
+            <div>
+              <p className="text-base md:text-lg text-text_secondary max-w-xl">
+                I am a web developer (Front-End) very dedicated and committed to
+                what I do, Feel free to take a look at my latest projects on the
+                projects page.
+              </p>
+              <div className="text-3xl flex gap-5 mt-3">
+                {social_media.map((icon, i) => (
+                  <div
+                    key={i}
+                    className="text-gray-600 hover:text-primary transition-colors duration-700 ease-in-out"
+                  >
+                    <a href={icon.href} target="_blank">
+                      {icon.logo}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-6 text-sm sm:text-lg font-medium flex items-center gap-5">
+              <a className="btn_primary" href={cv} download>
                 Download CV
               </a>
               <Link

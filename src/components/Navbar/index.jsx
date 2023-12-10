@@ -23,7 +23,7 @@ export const Navbar = () => {
         <ul className="md:flex hidden items-center gap-6 font-semibold">
           {menuLinks.map((link) => (
             <li key={link.name}>
-              <Link to={link.link} className="hover:text-primary transition-colors duration-500 ease-in-out">{link.name}</Link>
+              <Link to={link.link} className="hover:text-primary transition duration-700 ease-in-out">{link.name}</Link>
             </li>
           ))}
         </ul>
