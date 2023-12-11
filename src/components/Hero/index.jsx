@@ -33,7 +33,7 @@ export const Hero = () => {
                 {social_media.map((icon, i) => (
                   <div
                     key={i}
-                    className="text-gray-600 hover:text-primary transition-colors duration-700 ease-in-out"
+                    className="text-gray-200 hover:text-primary transition-colors duration-700 ease-in-out"
                   >
                     <a href={icon.href} target="_blank">
                       {icon.logo}
