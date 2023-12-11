@@ -59,7 +59,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <img className="" src={waveHero} alt="waves" />
+      <img src={waveHero} alt="waves" />
     </section>
   );
 };
