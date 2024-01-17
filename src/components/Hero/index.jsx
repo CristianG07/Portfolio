@@ -1,5 +1,5 @@
 import TypewriterComponent from "typewriter-effect";
-import { imgHero, waveHero } from "../../assets/img";
+import { imgHero } from "../../assets/img";
 import { Link } from "react-scroll";
 import cv from "../../assets/cv/Cv_Cristian_FrontEnd.pdf";
 import { social_media } from "../../data";
@@ -7,7 +7,7 @@ import { social_media } from "../../data";
 export const Hero = () => {
   return (
     <section className="bg-hero-bg" id="home">
-      <div className="w-[80%] mx-auto pt-24">
+      <div className="w-[80%] mx-auto py-24">
         <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-between">
           <div>
             <h1 className="text-2xl md:text-5xl text-white font-bold mb-4">
@@ -59,7 +59,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <img src={waveHero} alt="waves" />
     </section>
   );
 };

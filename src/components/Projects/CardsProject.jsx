@@ -7,13 +7,13 @@ export const CardsPeject = ({ projecs }) => {
       {projecs.map((project) => (
         <article key={project.id}>
           <div
-            className="grid px-5 py-7 max-w-xs bg-card duration-700 ease-in-out hover:bg-card_light rounded-xl hover:-translate-y-3 group"
+            className="grid px-5 py-7 max-w-xs duration-700 ease-in-out shadow-xl bg-card_light rounded-xl hover:-translate-y-3 group"
           >
             <div className="rounded-lg relative overflow-hidden h-36">
               <img
                 src={project.image}
                 alt={project.name}
-                className="min-h-fit"
+                className="object-cover"
               />
               <div className="absolute top-0 h-full w-full flex justify-center items-center gap-5 bg-gradient-to-t from-primary to-transparent translate-y-full group-hover:translate-y-0 duration-700">
               <a

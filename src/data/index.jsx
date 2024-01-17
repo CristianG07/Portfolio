@@ -11,6 +11,7 @@ import Project4 from "../assets/projects/p4.png";
 import Project5 from "../assets/projects/p5.png";
 import Project6 from "../assets/projects/p6.png";
 import Project7 from "../assets/projects/p7.png";
+import Project8 from "../assets/projects/p8.png";
 
 // skills images
 import SkillImg1 from "../assets/skills/html5.png";
@@ -124,6 +125,15 @@ export const social_media = [
 // projects
 export const projectsData = [
   {
+    id: "8",
+    image: Project8,
+    name: "Coursean",
+    stack: ["React", "Tailwind"],
+    github_link: "https://github.com/CristianG07/Coursean-Curses-Online-FrontEnd",
+    live_link: "https://coursean.vercel.app/",
+    category: "Ecommerces",
+  },
+  {
     id: "6",
     image: Project6,
     name: "Anon Ecommerce",
@@ -131,6 +141,15 @@ export const projectsData = [
     github_link: "https://github.com/CristianG07/anon-ecommerce-website",
     live_link: "https://anon-ecommerce-website.vercel.app/",
     category: "Ecommerces",
+  },
+  {
+    id: "4",
+    image: Project4,
+    name: "Filmlane",
+    stack: ["Html", "Css", "Js"],
+    github_link: "https://github.com/CristianG07/filmlane-master",
+    live_link: "https://filmlane-master.vercel.app/",
+    category: "Movie Websites",
   },
   {
     id: "5",
@@ -158,15 +177,6 @@ export const projectsData = [
     github_link: "https://github.com/CristianG07/highking_landing",
     live_link: "https://highking-landing.vercel.app/",
     category: "Landing Pages",
-  },
-  {
-    id: "4",
-    image: Project4,
-    name: "Filmlane",
-    stack: ["Html", "Css", "Js"],
-    github_link: "https://github.com/CristianG07/filmlane-master",
-    live_link: "filmlane-master.vercel.app",
-    category: "Movie Websites",
   },
   {
     id: "3",
@@ -198,9 +208,6 @@ export const projectsNav = [
   },
   {
     name: "Ecommerces",
-  },
-  {
-    name: "Social Networks",
   },
   {
     name: "Movie Websites",
