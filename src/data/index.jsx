@@ -12,6 +12,7 @@ import Project5 from "../assets/projects/p5.png";
 import Project6 from "../assets/projects/p6.png";
 import Project7 from "../assets/projects/p7.png";
 import Project8 from "../assets/projects/p8.png";
+import Project9 from "../assets/projects/p9.png";
 
 // skills images
 import SkillImg1 from "../assets/skills/html5.png";
@@ -124,6 +125,15 @@ export const social_media = [
 
 // projects
 export const projectsData = [
+  {
+    id: "9",
+    image: Project9,
+    name: "Tech-Cloud",
+    stack: ["React", "Tailwind"],
+    github_link: "https://github.com/CristianG07/Tech-Cloud",
+    live_link: "http://tech-cloud-ten.vercel.app",
+    category: "Ecommerces",
+  },
   {
     id: "8",
     image: Project8,

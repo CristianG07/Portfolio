@@ -13,7 +13,7 @@ export const CardsPeject = ({ projecs }) => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="object-cover"
+                className="object-cover aspect-[81/46]"
               />
               <div className="absolute top-0 h-full w-full flex justify-center items-center gap-5 bg-gradient-to-t from-primary to-transparent translate-y-full group-hover:translate-y-0 duration-700">
               <a
