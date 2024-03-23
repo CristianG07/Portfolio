@@ -18,7 +18,7 @@ export default {
         main: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        'hero-bg': "url('/src/assets/img/banner-bg.png')",
+        'hero-bg': "url('/src/assets/img/banner-bg.jpg')",
         'footer-bg': "url('/src/assets/img/footer-bg.png')",
       },
       animation: {

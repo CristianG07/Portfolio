@@ -21,6 +21,7 @@ export const CardsPeject = ({ projecs }) => {
                 target="_blank"
                 className="btn_projects"
                 title="Code"
+                rel="noreferrer"
               >
                 <FaCode size={35} />
               </a>
@@ -29,6 +30,7 @@ export const CardsPeject = ({ projecs }) => {
                 target="_blank"
                 className="btn_projects"
                 title="Demo"
+                rel="noreferrer"
               >
                 <MdOutlineRemoveRedEye size={35} />
               </a>

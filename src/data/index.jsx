@@ -1,30 +1,14 @@
 import { FiPhone } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { TbBrandFiverr } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 import { LuMapPin } from "react-icons/lu";
 
 // projects images
-import Project1 from "../assets/projects/p1.jpg";
-import Project2 from "../assets/projects/p2.jpg";
-import Project3 from "../assets/projects/p3.jpg";
-import Project4 from "../assets/projects/p4.png";
-import Project5 from "../assets/projects/p5.png";
-import Project6 from "../assets/projects/p6.png";
-import Project7 from "../assets/projects/p7.png";
-import Project8 from "../assets/projects/p8.png";
-import Project9 from "../assets/projects/p9.png";
+import { p1, p10, p2, p3, p4, p5, p6, p7, p8, p9 } from "../assets/projects";
 
 // skills images
-import SkillImg1 from "../assets/skills/html5.png";
-import SkillImg2 from "../assets/skills/css3.png";
-import SkillImg3 from "../assets/skills/js.png";
-import SkillImg4 from "../assets/skills/reactjs.png";
-import SkillImg5 from "../assets/skills/tailwind.png";
-import SkillImg6 from "../assets/skills/nodejs.png";
-import SkillImg7 from "../assets/skills/express.png";
-import SkillImg8 from "../assets/skills/mongodb.png";
-import SkillImg9 from "../assets/skills/git.png";
-// import SkillImg8 from "./assets/skills/figma.png";
+import { css, express, git, html, js, mongodb, nodejs, reactjs, tailwind } from "../assets/skills";
 
 export const menuLinks = [
   { name: "Home", link: "home" },
@@ -36,39 +20,39 @@ export const menuLinks = [
 // skill
 const skills = [
   {
-    src: SkillImg1,
+    src: html,
     title: "HTML",
   },
   {
-    src: SkillImg2,
+    src: css,
     title: "CSS",
   },
   {
-    src: SkillImg3,
+    src: js,
     title: "JavaScript",
   },
   {
-    src: SkillImg4,
+    src: reactjs,
     title: "ReactJS",
   },
   {
-    src: SkillImg5,
+    src: tailwind,
     title: "Tailwind",
   },
   {
-    src: SkillImg6,
+    src: nodejs,
     title: "NodeJS",
   },
   {
-    src: SkillImg7,
+    src: express,
     title: "ExpressJS",
   },
   {
-    src: SkillImg8,
+    src: mongodb,
     title: "MongoDB",
   },
   {
-    src: SkillImg9,
+    src: git,
     title: "Git",
   },
 ];
@@ -105,29 +89,42 @@ export const aboutLinks = [
 
 // social
 export const social_media = [
+  // {
+  //   name: 'facebook',
+  //   logo: <FaFacebook/>,
+  //   href: "https://www.facebook.com/profile.php?id=100076453703945",
+  // },
   {
-    logo: <FaInstagram/>,
-    href: "https://www.instagram.com/cristiangfrontend/",
-  },
-  {
-    logo: <FaFacebook/>,
-    href: "https://www.facebook.com/profile.php?id=100076453703945",
-  },
-  {
+    name: 'linkedin',
     logo: <FaLinkedin/>,
     href: "https://www.linkedin.com/in/cristian-gonzalez-3072b1172/",
   },
   { 
+    name: 'github',
     logo: <FaGithub/>,
     href: "https://github.com/CristianG07"
+  },
+  {
+    name: 'fiverr',
+    logo: <TbBrandFiverr/>,
+    href: "https://www.fiverr.com/cristiangg07",
   },
 ];
 
 // projects
 export const projectsData = [
   {
+    id: "10",
+    image: p10,
+    name: "Vacancies",
+    stack: ["React", "Tailwind"],
+    github_link: "https://github.com/CristianG07/Tech-Cloud",
+    live_link: "http://tech-cloud-ten.vercel.app",
+    category: "Ecommerces",
+  },
+  {
     id: "9",
-    image: Project9,
+    image: p9,
     name: "Tech-Cloud",
     stack: ["React", "Tailwind"],
     github_link: "https://github.com/CristianG07/Tech-Cloud",
@@ -136,7 +133,7 @@ export const projectsData = [
   },
   {
     id: "8",
-    image: Project8,
+    image: p8,
     name: "Coursean",
     stack: ["React", "Tailwind"],
     github_link: "https://github.com/CristianG07/Coursean-Curses-Online-FrontEnd",
@@ -145,7 +142,7 @@ export const projectsData = [
   },
   {
     id: "6",
-    image: Project6,
+    image: p6,
     name: "Anon Ecommerce",
     stack: ["Html", "Css", "Js"],
     github_link: "https://github.com/CristianG07/anon-ecommerce-website",
@@ -154,7 +151,7 @@ export const projectsData = [
   },
   {
     id: "4",
-    image: Project4,
+    image: p4,
     name: "Filmlane",
     stack: ["Html", "Css", "Js"],
     github_link: "https://github.com/CristianG07/filmlane-master",
@@ -163,7 +160,7 @@ export const projectsData = [
   },
   {
     id: "5",
-    image: Project5,
+    image: p5,
     name: "CineFlix",
     stack: ["Html", "Css", "Js"],
     github_link: "https://github.com/CristianG07/cineflix-master/tree/master",
@@ -172,7 +169,7 @@ export const projectsData = [
   },
   {
     id: "1",
-    image: Project1,
+    image: p1,
     name: "Jobs Search App",
     stack: ["Html", "Css"],
     github_link: "https://github.com/CristianG07/jobsearchapp_landing",
@@ -181,7 +178,7 @@ export const projectsData = [
   },
   {
     id: "2",
-    image: Project2,
+    image: p2,
     name: "Highking",
     stack: ["React", "Tailwind"],
     github_link: "https://github.com/CristianG07/highking_landing",
@@ -190,7 +187,7 @@ export const projectsData = [
   },
   {
     id: "3",
-    image: Project3,
+    image: p3,
     name: "Page Courses",
     stack: ["React", "Tailwind"],
     github_link: "https://github.com/CristianG07/Landing-Page-Courses",
@@ -199,7 +196,7 @@ export const projectsData = [
   },
   {
     id: "7",
-    image: Project7,
+    image: p7,
     name: "Descuenta$",
     stack: ["Html", "Css", "Js", "Php"],
     github_link: "https://github.com/CristianG07/landing-descuentas",

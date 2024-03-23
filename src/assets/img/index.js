@@ -1,5 +1,4 @@
-import imgAbout from './about-image.png'
+import imgAbout from './about-image.jpg'
 import imgHero from './hero-image.svg'
-import bgHero from './banner-bg.png'
 
-export { imgAbout, imgHero, bgHero }
+export { imgAbout, imgHero,  }

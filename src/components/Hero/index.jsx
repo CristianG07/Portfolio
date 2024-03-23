@@ -30,13 +30,14 @@ export const Hero = () => {
                 projects page.
               </p>
               <div className="text-3xl flex gap-5 mt-3">
-                {social_media.map((icon, i) => (
+                {social_media.map((social) => (
                   <div
-                    key={i}
+                    key={social.name}
                     className="text-gray-200 hover:text-primary transition-colors duration-700 ease-in-out"
+                    
                   >
-                    <a href={icon.href} target="_blank">
-                      {icon.logo}
+                    <a title={social.name} href={social.href} target="_blank" rel="noreferrer">
+                      {social.logo}
                     </a>
                   </div>
                 ))}
