@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-[#151515]
+  }
+
   body {
     @apply w-full overflow-x-hidden
   }
