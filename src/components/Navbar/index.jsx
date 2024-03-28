@@ -38,7 +38,7 @@ export const Navbar = () => {
           <FaBars size="2rem"/>
         </button>
       </nav>
-        <nav className={`${IsOpen ? '' : 'hidden'} bg-card_light bg-opacity-50 md:hidden w-full absolute top-20 px-7 py-10 transition duration-500 ease-in-out text-lg font-medium`}>
+        <nav className={`${IsOpen ? 'opacity-100 visible' : 'opacity-0 invisible'} bg-card_light bg-opacity-50 md:hidden w-full absolute top-20 px-7 py-10 transition-all duration-500 text-lg font-medium`}>
           <ul>
             {menuLinks.map((link) => (
               <li key={link.name} className="mb-5" onClick={() => setIsOpen(!IsOpen)}>
