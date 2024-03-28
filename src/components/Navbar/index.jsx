@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // icons
 import { DiCssdeck } from "react-icons/di";
@@ -11,16 +11,23 @@ import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [IsOpen, setIsOpen] = useState(false)
+  const [isActiveScroll, setActiveScroll] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 0 ? setActiveScroll(true) : setActiveScroll(false)
+    })
+  }, [])
 
   return (
-    <header className="flex justify-center sticky top-0 left-0 z-10 h-20 bg-[#151515] text-white">
+    <header className={`${isActiveScroll ? 'bg-bg h-20' : 'bg-transparent h-[5.3rem]'} flex justify-center fixed w-full top-0 left-0 z-10 text-white transition-all duration-700`}>
       <nav className="flex justify-between items-center w-[85%]">
         <div className="flex">
           <Link to="home" className="flex items-center justify-center">
-            <DiCssdeck size="3rem" color="#854CE6" /> <h6 className="text-3xl font-semibold">Cristian <span className="text-primary">G.</span></h6>
+            <DiCssdeck size="3rem" color="#854CE6" /> <h6 className="text-4xl font-semibold">Cristian <span className="text-primary">G.</span></h6>
           </Link>
         </div>
-        <ul className="md:flex hidden items-center gap-6 font-semibold">
+        <ul className="md:flex hidden items-center gap-5 lg:gap-10 text-lg font-semibold">
           {menuLinks.map((link) => (
             <li key={link.name}>
               <Link to={link.link} className="hover:text-primary transition duration-700 ease-in-out">{link.name}</Link>

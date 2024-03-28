@@ -7,7 +7,7 @@ import { social_media } from "../../data";
 export const Hero = () => {
   return (
     <section className="bg-hero-bg" id="home">
-      <div className="w-[80%] mx-auto py-24">
+      <div className="w-[80%] mx-auto pt-40 pb-24">
         <div className="flex flex-col-reverse gap-5 items-center lg:flex-row lg:justify-between">
           <div>
             <h1 className="text-2xl md:text-5xl text-white font-bold mb-4">
@@ -48,7 +48,7 @@ export const Hero = () => {
                 Download CV
               </a>
               <Link
-                className="border-2 border-primary rounded-xl text-primary px-4 py-4 sm:px-5 md:px-7 md:py-5 hover:scale-105 duration-500"
+                className="btn_primary border-2 border-primary rounded-xl text-primary hover:scale-105 bg-none duration-500"
                 to="contact"
               >
                 Contact Me

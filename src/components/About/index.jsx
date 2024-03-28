@@ -19,7 +19,7 @@ export const About = () => {
         <div className="mb-16 mt-10 lg:m-0">
           <img className="border" src={imgAbout} alt="" />
         </div>
-        <div className="max-w-lg">
+        <div className="max-w-full lg:max-w-lg mx-auto">
           <h4 className="text-2xl md:text-5xl text-white font-bold mb-4">
             About <span className="text-primary">Me</span>
           </h4>

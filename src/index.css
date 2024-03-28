@@ -34,9 +34,6 @@
     @apply text-white border-white border-4 rounded-full duration-700 ease-in-out hover:bg-purple-500 p-3 inline-block
   }
   .btn_primary {
-    @apply bg-gradient-to-bl from-button2 to-button px-4 py-4 sm:px-5 md:px-7 md:py-5 rounded-xl text-white hover:scale-105 duration-500
-  }
-  .gradian_section {
-    @apply bg-[#151515]
+    @apply bg-gradient-to-bl from-button2 to-button px-4 py-4 sm:px-5 md:px-6 md:py-4 rounded-xl text-white hover:scale-105 duration-500
   }
 }
